@@ -15,7 +15,7 @@ The data was normalised using the software Weka [3] to ensure that all attribute
 # k-Nearest Neighbour
 My kNN algorithm uses Euclidean distance to measure the distance between each data point. Although this is not always the best choice for a kNN algorithm, because the data is not only normalised, but also continuous, it was an appropriate choice in this case [5].
 
-![](http://latex.codecogs.com/gif.latex?D%28A%2CB%29%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28a_i-b_i%29%5E2%7D)
+![equation 1](http://latex.codecogs.com/gif.latex?D%28A%2CB%29%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28a_i-b_i%29%5E2%7D)
 
 where	![](http://latex.codecogs.com/gif.latex?A%3D%28a_1%2Ca_2%2C...%2Ca_n%29)
 
@@ -25,6 +25,15 @@ The algorithm uses equation 1 to ﬁnd the euclidean distance between the testin
 #  Naive Bayes
 Naive Bayes (NB) algorithm is a statistical based classiﬁer that uses Bayes theorem, equation 2, to determine the probability of a given data point with attributes, A ,being in class C [6].
 
-![](http://latex.codecogs.com/gif.latex?P%28C%7CA%29%3D%5Cfrac%7BP%28A%7CC%29P%28C%29%7D%7BP%28A%29%7D)
+![equation 2](http://latex.codecogs.com/gif.latex?P%28C%7CA%29%3D%5Cfrac%7BP%28A%7CC%29P%28C%29%7D%7BP%28A%29%7D)
 
 For the purposes of this classiﬁer I assume a normal distribution for all attributes. P(A|C) can be broken down to P(a1|C)P(a2|C)...P(an|C) where A = (a1,a2,...,an) is the set of attributes for each data point.
+## Training
+The training phase of the algorithm calculates the mean and standard deviation for each attribute for each class. It also ﬁnds P(C) for each class, yes and no, by simply dividing the number of yes and no data points by the total.
+## Testing
+The testing phase of the algorithm uses a normal distribution using equation 3 where a is an attribute in a testing data point, µ is the mean of that attribute for a given class, and σ is the standard deviation of that attribute for a given class.
+
+![equation 3](http://latex.codecogs.com/gif.latex?P%28a_i%7CC%29%3D%20%5Cfrac%7B1%7D%7B%5Csigma%20%5Csqrt%7B2%5CPi%7D%7De%5E-%5Cfrac%7B%28a_i-%5Cmu%29%5E2%7D%7B2%5Csigma%5E2%7D)
+
+Because the algorithm is comparing the probability of the test data being in either yes or no class (i.e. P(ai|yes)/P(ai|no)), it is not necessary to calculate P(A). The class with the highest probability is chosen by the algorithm. If both classes have the same probability, then ’yes’ is chosen.
+
