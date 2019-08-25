@@ -52,6 +52,11 @@ for example,
 
 # REFERENCES 
 [1] V.Sigillito,“Pimaindiansdiabetesdatabase,”UCIMachineLearning Repository [http://archive. ics. uci. edu/ml/datasets/Pima Indians Diabetes]. Phoenix, AZ: National Institute of Diabetes and Digestive and Kidney Diseases, 1990. 
+
 [2] UCI, “Pima indians diabetes database — kaggle,” Oct 2016. [Online]. Available: https://www.kaggle.com/uciml/ pima-indians-diabetes-database 
-[3] I.H.Witten,E.Frank,M.A.Hall,andC.J.Pal,DataMining:Practical machine learning tools and techniques. Morgan Kaufmann, 2016.  [4] Y. Bao, N. Ishii, and X. Du, “Combining multiple k-nearest neighbor classiﬁers using different distance functions,” in International Conference on Intelligent Data Engineering and Automated Learning. Springer, 2004, pp. 634–641. 
+
+[3] I.H.Witten,E.Frank,M.A.Hall,andC.J.Pal,DataMining:Practical machine learning tools and techniques. Morgan Kaufmann, 2016.
+
+[4] Y. Bao, N. Ishii, and X. Du, “Combining multiple k-nearest neighbor classiﬁers using different distance functions,” in International Conference on Intelligent Data Engineering and Automated Learning. Springer, 2004, pp. 634–641. 
+
 [5] M.GoldsteinandD.Wooff,Bayeslinearstatistics:Theoryandmethods. John Wiley & Sons, 2007, vol. 716.
