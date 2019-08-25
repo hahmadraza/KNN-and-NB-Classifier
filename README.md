@@ -13,7 +13,7 @@ The data set that I used is a modiﬁed version of the Pima Indians Diabetes Dat
 9) Class (yes/no)
 The data was normalised using the software Weka [3] to ensure that all attribute values are between zero and one.
 # k-Nearest Neighbour
-My kNN algorithm uses Euclidean distance to measure the distance between each data point. Although this is not always the best choice for a kNN algorithm, because the data is not only normalised, but also continuous, it was an appropriate choice in this case [5].
+My kNN algorithm uses Euclidean distance to measure the distance between each data point. Although this is not always the best choice for a kNN algorithm, because the data is not only normalised, but also continuous, it was an appropriate choice in this case [4].
 
 ![](http://latex.codecogs.com/gif.latex?D%28A%2CB%29%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28a_i-b_i%29%5E2%7D)
 
@@ -23,7 +23,7 @@ and	![](http://latex.codecogs.com/gif.latex?B%3D%28b_1%2Cb_2%2C...%2Cb_n%29)
 
 The algorithm uses above equation to ﬁnd the euclidean distance between the testing data point and each one of the training data points. It then selects the k nearest data points and takes the average of the class values to determine the class of the testing data point. If there is a tie, the algorithm chooses ‘yes’.
 #  Naive Bayes
-Naive Bayes (NB) algorithm is a statistical based classiﬁer that uses Bayes theorem (equation given below), to determine the probability of a given data point with attributes, A, being in class C [6].
+Naive Bayes (NB) algorithm is a statistical based classiﬁer that uses Bayes theorem (equation given below), to determine the probability of a given data point with attributes, A, being in class C [5].
 
 ![](http://latex.codecogs.com/gif.latex?P%28C%7CA%29%3D%5Cfrac%7BP%28A%7CC%29P%28C%29%7D%7BP%28A%29%7D)
 
@@ -49,3 +49,9 @@ Run s-folds.py using Python 3 with the path to the testing data ﬁle as the ﬁ
 for example,
 
 !python MyClassifier.py testData.csv 10
+
+# REFERENCES 
+[1] V.Sigillito,“Pimaindiansdiabetesdatabase,”UCIMachineLearning Repository [http://archive. ics. uci. edu/ml/datasets/Pima Indians Diabetes]. Phoenix, AZ: National Institute of Diabetes and Digestive and Kidney Diseases, 1990. 
+[2] UCI, “Pima indians diabetes database — kaggle,” Oct 2016. [Online]. Available: https://www.kaggle.com/uciml/ pima-indians-diabetes-database 
+[3] I.H.Witten,E.Frank,M.A.Hall,andC.J.Pal,DataMining:Practical machine learning tools and techniques. Morgan Kaufmann, 2016.  [4] Y. Bao, N. Ishii, and X. Du, “Combining multiple k-nearest neighbor classiﬁers using different distance functions,” in International Conference on Intelligent Data Engineering and Automated Learning. Springer, 2004, pp. 634–641. 
+[5] M.GoldsteinandD.Wooff,Bayeslinearstatistics:Theoryandmethods. John Wiley & Sons, 2007, vol. 716.
