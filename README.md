@@ -42,13 +42,12 @@ The ﬁle you will need to run my code for kNN and NB is MyClassifier.py
 Run the algorithms using Python 3 by running MyClassiﬁer.py. The ﬁrst command line argument is the path to the training data, the second command line argument is the path to the testing data, and the third command line argumen is the algorithm you would like to run (eg. NB, 1NN, 3NN, etc.).
 for example,
 
-!python MyClassifier.py pima.csv testData.csv 3NN
+> python MyClassifier.py pima.csv testData.csv 3NN
 
 ## s-fold cross-validator
 Run s-folds.py using Python 3 with the path to the testing data ﬁle as the ﬁrst command line argument, and the number of folds you would like to use as the second command line argument. The code will print the accuracy for each algorithm to standard output,and generate a ﬁle of the folds used.
 for example,
-
-!python MyClassifier.py testData.csv 10
+> python MyClassifier.py testData.csv 10
 
 # REFERENCES 
 [1] V.Sigillito,“Pimaindiansdiabetesdatabase,”UCIMachineLearning Repository [http://archive. ics. uci. edu/ml/datasets/Pima Indians Diabetes]. Phoenix, AZ: National Institute of Diabetes and Digestive and Kidney Diseases, 1990. 
